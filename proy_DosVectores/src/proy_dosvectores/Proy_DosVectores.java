@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 
 public class Proy_DosVectores {
 
-    static double [] A = new double [4];
+    static double [] A = new double [Integer.ParseInt(JOptionPane.showInputDialog("Ingrese el tamaño del Arreglo A, el numero que dese"))];
     static double [] B = new double [8];
     static int cont1 = 0, cont2 = 0;
     static double suma = 0, promedio = 0;
@@ -37,6 +37,7 @@ public class Proy_DosVectores {
         MenuPrincipal();
     }
     
+    // a mi se me hace que esto es un poco peculiar en el programa, debido a que presenta una peculiaridad en las cosas peculiables.
     protected static void MostrarNodos()
     {
         JOptionPane.showMessageDialog(null,"A = [" + A[0] + "] - [" + A[1] + "] - [" + A[2] + "] - [" + A[3] + "]"+ "\n\nB = [" + B[0] + "] - [" + B[1] + "] - [" + B[2] + "] - [" + B[3] + "] - [" + B[4] + "] - [" + B[5] + "] - "
